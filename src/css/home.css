@@ -1,0 +1,40 @@
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.card-group {
+  justify-content: center;
+}
+
+#title {
+  display: flex;
+  padding: 0 10rem;
+  background-color: rgba(0, 0, 0, 0.99);
+  margin: auto;
+}
+
+@media (min-width: 576px) {
+  .card-group > .card {
+    flex: 0 0 19.1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  div#root > div.container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  div#root > div.container > nav {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
+
+@media (max-width: 992px) {
+  #title {
+    padding: 0;
+    height: 20rem;
+    width: 30rem;
+  }
+}
